@@ -1,21 +1,21 @@
 import React from "react";
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
-import LeadsCard from "./components/LeadsCard";
-import Faculty from  "./components/Faculty";
-import leadsData from "./data/leadsData";
-import WebTeam from "./components/WebTeam";
-import webTeam from "./data/webTeam";
-import TeachTeam from "./components/TeachTeam";
-import DocTeam from "./components/DocTeam";
-import techTeam from "./data/techTeam";
-import docTeam from "./data/docTeam";
+import LeadsCard from "../components/LeadsCard";
+import Faculty from  "../components/Faculty";
+import leadsData from "../data/leadsData";
+import WebTeam from "../components/WebTeam";
+import webTeam from "../data/webTeam";
+import TeachTeam from "../components/TeachTeam";
+import DocTeam from "../components/DocTeam";
+import techTeam from "../data/techTeam";
+import docTeam from "../data/docTeam";
 
 
-import MediaTeam from "./components/MediaTeam";
-import mediaTeam from "./data/mediaTeam";
+import MediaTeam from "../components/MediaTeam";
+import mediaTeam from "../data/mediaTeam";
 
 
-import facultyData from "./data/facultyData"
+import facultyData from "../data/facultyData"
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Teams() {

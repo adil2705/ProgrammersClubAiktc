@@ -1,16 +1,14 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import Foot from "./components/Foot";
-import Home from "./Home";
-import Resource from "./Resource";
-import Event from "./Event";
-import Teams from "./Teams";
-import Hackathon from "./Hackathon";
+import Home from "./pages/Home";
+import Resource from "./pages/Resource";
+import Event from "./pages/Event";
+import Teams from "./pages/Teams";
+import Hackathon from "./pages/Hackathon";
 import { BrowserRouter, Route, Switch, } from "react-router-dom";
-import EventDetails from "./EventDetails";
-// import Member from "./member";
-import Member from "./Member";
-// import TeamTshirt from "./TeamTshirt";
+import EventDetails from "./pages/EventDetails";
+import Member from "./pages/Member";
 
 export default function App() {
   return (

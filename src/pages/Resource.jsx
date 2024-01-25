@@ -1,6 +1,6 @@
 import React from "react";
-import resourcesData from "./data/resourcesData";
-import ResourceCard from "./components/ResourceCard"
+import resourcesData from "../data/resourcesData";
+import ResourceCard from "../components/ResourceCard"
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Resource() {

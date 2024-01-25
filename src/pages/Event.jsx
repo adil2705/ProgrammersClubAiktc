@@ -1,6 +1,6 @@
 import React from "react";
-import EventCard from "./components/EventCard";
-import eventCard from "./data/eventCard";
+import EventCard from "../components/EventCard";
+import eventCard from "../data/eventCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

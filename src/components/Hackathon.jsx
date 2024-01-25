@@ -1,6 +1,4 @@
 import React from "react";
-import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function HackathonPage({hackathon}) {

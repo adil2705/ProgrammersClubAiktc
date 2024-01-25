@@ -3,8 +3,8 @@ import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import HackathonData from "./data/HackathonData";
-import HackathonPage from "./components/HackathonPage";
+import HackathonData from "../data/HackathonData";
+import HackathonPage from "../components/Hackathon";
 
 
 export default function Hackathon() {
