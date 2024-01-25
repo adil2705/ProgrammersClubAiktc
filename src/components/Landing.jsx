@@ -34,7 +34,7 @@ export default function Landing() {
               href="/Algorithm"
               target="_self"
             >
-              Algorithm 8.O
+              Algoritim 8.O
             </a>
           </div>
         </div>
