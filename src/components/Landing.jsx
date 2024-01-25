@@ -18,7 +18,7 @@ export default function Landing() {
           <h1
             className="font-headline  text-brand-light py-2 text-4xl font-bold tracking-tight sm:text-4xl lg:text-6xl xl:text-8xl"
           >
-            Programmer's Club
+            Programmers Club
           </h1>
           <p
             className="mt-2 text-gray-600 sm:mt-4 sm:text-xl"
@@ -31,10 +31,10 @@ export default function Landing() {
           >
             <a
               className="focus:outline-none inline-block transform rounded-lg my-6 bg-green-400 px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-green-600 focus:ring focus:ring-green-400 focus:ring-opacity-50 focus:ring-offset-2 active:bg-green-400 sm:text-base"
-              href="/member"
+              href="/Algorithm"
               target="_self"
             >
-              become a member
+              Algorithm 8.O
             </a>
           </div>
         </div>
