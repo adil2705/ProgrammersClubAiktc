@@ -16,7 +16,7 @@ export default function EventDetails() {
       </div>
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mt-12 mb-12 overflow-hidden space-y-12 text-xl">
         <h3 className="">
-        A 36-hours online coding contest, hosted by Programmer's Club, in collaboration with Aiktc to be conducted on 14th-15th March 2023.
+        A 36-hours online coding contest, hosted by Programmer's Club, in collaboration with AIKTC to be conducted on 14th-15th March 2023.
         </h3>
 
         <div>
@@ -104,7 +104,7 @@ export default function EventDetails() {
             </ul>
             <p className="mt-4">
               <b>
-                The top Performer from Aiktc will get ₹300 cash prize and the
+                The top Performer from AIKTC will get ₹300 cash prize and the
                 Runner-up will get ₹100.
               </b>{" "}
             </p>
