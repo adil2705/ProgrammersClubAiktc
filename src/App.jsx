@@ -22,7 +22,7 @@ export default function App() {
       <div className="App">
         <Switch>
           <Route path="/algorithm" component={AlgoHome} />
-          <Route path="/signuplogin" component={Signup} />
+          <Route path="/signup" component={Signup} />
           <Route path="/" component={DefaultContainer} />
         </Switch>
       </div>
