@@ -18,7 +18,7 @@ export default function Landing() {
           <h1
             className="font-headline  text-brand-light py-2 text-4xl font-bold tracking-tight sm:text-4xl lg:text-6xl xl:text-8xl"
           >
-            Programmer's Club
+            Programmers Club
           </h1>
           <p
             className="mt-2 text-gray-600 sm:mt-4 sm:text-xl"
