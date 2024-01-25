@@ -11,7 +11,7 @@ export default function AlgoHome() {
               href="/signup"
               target="_self"
             >
-              Signup
+              Signin
             </a>
           </div>
         </div>
