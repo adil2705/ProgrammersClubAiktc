@@ -6,19 +6,19 @@ export default function Landing() {
   return (
     <div className="mx-auto mb-5 grid max-w-7xl px-4 sm:px-6 md:mt-2 lg:grid-cols-2 lg:px-4 2xl:grid-cols-2">
       <div className="mx-auto max-w-md px-8 py-4 sm:max-w-xl lg:max-w-full lg:px-12 lg:py-12 xl:mr-0 2xl:col-span-2">
-        <div className="lg:max-w-xl">
-      
+        <div className="xl:max-w-xl">
+          {/* <img className="h-10" src="/img/ccbcet-logo.svg" alt="Workcation" /> */}
           <img
             className="mt-2 rounded-lg object-center sm:mt-6 sm:h-80 sm:w-auto sm:object-cover md:h-80 lg:hidden"
             src="/img/landing.svg"
             alt="graphics"
           />
-          <p className="text-sm font-semibold tracking-wider text-black uppercase">Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai</p>
-          <p className="text-sm font-semibold tracking-wider text-black uppercase">Department of Computer Engineering</p>
+          <p class="text-sm font-semibold tracking-wider text-black uppercase">Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai</p>
+          <p class="text-sm font-semibold tracking-wider text-black uppercase">Department of Computer Engineering</p>
           <h1
             className="font-headline  text-brand-light py-2 text-4xl font-bold tracking-tight sm:text-4xl lg:text-6xl xl:text-8xl"
           >
-            Programmers Club
+            Programmer's Club
           </h1>
           <p
             className="mt-2 text-gray-600 sm:mt-4 sm:text-xl"
@@ -31,10 +31,10 @@ export default function Landing() {
           >
             <a
               className="focus:outline-none inline-block transform rounded-lg my-6 bg-green-400 px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-green-600 focus:ring focus:ring-green-400 focus:ring-opacity-50 focus:ring-offset-2 active:bg-green-400 sm:text-base"
-              href="/algorithm"
+              href="/member"
               target="_self"
             >
-              Algorithm 8.0
+              become a member
             </a>
           </div>
         </div>
