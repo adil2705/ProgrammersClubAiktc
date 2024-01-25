@@ -21,16 +21,16 @@ export default function Opportunity() {
           >
             <div className="w-full px-4 py-2 lg:w-1/2">
               <div className=" mb-4 transform  rounded-lg border border-gray-200 bg-white p-6 shadow-md transition duration-500 ease-in-out hover:scale-105 ">
-              <h3 class="mt-4 text-base md:text-xl font-medium text-gray-800">
-                  <span class=" text-green-500">Student-Led Initiative:</span>
+              <h3 className="mt-4 text-base md:text-xl font-medium text-gray-800">
+                  <span className=" text-green-500">Student-Led Initiative:</span>
 	            </h3>
                 <p className="font-semibold text-gray-700 antialiased ">
                   The club is entirely run and organized by students, emphasizing peer-to-peer learning and collaboration.
                 </p>
               </div>
               <div className=" mb-4 transform  rounded-lg border border-gray-200 bg-white p-6 shadow-md transition duration-500 ease-in-out hover:scale-105  ">
-              <h3 class="mt-4 text-base md:text-xl font-medium text-gray-800">
-                  <span class=" text-green-500">Passionate Community:</span>
+              <h3 className="mt-4 text-base md:text-xl font-medium text-gray-800">
+                  <span className=" text-green-500">Passionate Community:</span>
 	            </h3>
                 <p className="font-semibold text-gray-700  antialiased ">
                   You will get the opportunity to receive training and develop
@@ -44,8 +44,8 @@ export default function Opportunity() {
                 href="#"
                 className=" mb-4 transform rounded-lg border border-gray-200  bg-white p-6 shadow-md transition duration-500 ease-in-out hover:scale-105  "
               >
-                <h3 class="mt-4 text-base md:text-xl font-medium text-gray-800">
-                  <span class=" text-green-500">Knowledge Sharing:</span>
+                <h3 className="mt-4 text-base md:text-xl font-medium text-gray-800">
+                  <span className=" text-green-500">Knowledge Sharing:</span>
 	              </h3>
                 <p className="font-semibold text-gray-700 antialiased">
                   We provide proper mentorship and resources to become a better
@@ -56,8 +56,8 @@ export default function Opportunity() {
                 href="#"
                 className=" mb-4 transform rounded-lg border border-gray-200  bg-white p-6 shadow-md transition duration-500 ease-in-out hover:scale-105  "
               >
-                <h3 class="mt-4 text-base md:text-xl font-medium text-gray-800">
-	                <span class=" text-green-500">Innovation and Growth:</span>
+                <h3 className="mt-4 text-base md:text-xl font-medium text-gray-800">
+	                <span className=" text-green-500">Innovation and Growth:</span>
 	          </h3>
                 <p className="font-semibold text-gray-700 antialiased">
                   

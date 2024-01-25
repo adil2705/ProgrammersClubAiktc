@@ -17,10 +17,12 @@ export default function ResourceCard({ resources }) {
               {resources.title}
             </h1>
             <table className="font-serif text-sm text-gray-600">
-              <tr>
-                <td className="text-red-600"></td>
-                <td>{resources.tags}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="text-red-600"></td>
+                  <td>{resources.tags}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <a
@@ -48,10 +50,12 @@ export default function ResourceCard({ resources }) {
               {resources.title}
             </h1>
             <table className="font-serif text-lg text-gray-600">
-              <tr>
-                <td className="text-red-600"></td>
-                <td>{resources.tags}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="text-red-600"></td>
+                  <td>{resources.tags}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <a
