@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Form from "./Form";
+import Form from "../components/Form";
 import Marquee from "../components/Marquee";
 import AOS from "aos";
 import "aos/dist/aos.css";
