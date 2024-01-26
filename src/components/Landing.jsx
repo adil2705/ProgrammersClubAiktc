@@ -5,11 +5,11 @@ export default function Landing() {
  
   return (
     <div className="mx-auto mb-5 grid max-w-7xl px-4 sm:px-6 md:mt-2 lg:grid-cols-2 lg:px-4 2xl:grid-cols-2">
-      <div className="mx-auto max-w-md px-8 py-4 sm:max-w-xl lg:max-w-full lg:px-12 lg:py-12 xl:mr-0 2xl:col-span-2">
+      <div className="mx-auto max-w-md px-8 py-4 sm:max-w-xl lg:max-w-full lg:px-12 lg:py-12 xl:mr-0 2xl:col-span-5">
         <div className="xl:max-w-xl">
           {/* <img className="h-10" src="/img/ccbcet-logo.svg" alt="Workcation" /> */}
           <img
-            className="mt-2 rounded-lg object-center sm:mt-6 sm:h-80 sm:w-auto sm:object-cover md:h-80 lg:hidden"
+            className="mt-2 rounded-lg object-center sm:mt-6 sm:h-80 sm:w-auto sm:object-cover  lg:hidden"
             src="/img/landing.svg"
             alt="graphics"
           />

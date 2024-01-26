@@ -12,7 +12,7 @@ import EventDetails from "./pages/EventDetails";
 import Member from "./pages/Member";
 
 import AlgoHome from "./algorithm8.0/pages/AlgoHome";
-import SignIn from "./algorithm8.0/pages/Signup";
+import SignIn from "./algorithm8.0/pages/SignIn";
 
 import { BrowserRouter, Route, Switch, } from "react-router-dom";
 
@@ -22,7 +22,7 @@ export default function App() {
       <div>
         <Switch>
           <Route path="/algorithm" component={AlgoHome} />
-          <Route path="/algorithm/signin" component={SignIn} />
+          <Route path="/signin" component={SignIn} />
           <Route path="/" component={DefaultContainer} />
         </Switch>
       </div>
