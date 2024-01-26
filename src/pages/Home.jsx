@@ -1,11 +1,10 @@
 import React from "react";
-import Landing from "./components/Landing";
-import Youtubevideo from "./components/Youtubevideo";
-import EventCard from "./components/EventCard";
-import eventCard from "./data/eventCard";
-import Opportunity from "./components/Opportunity";
-import Faq from "./components/Faq";
-import { Link } from "react-router-dom";
+import Landing from "../components/Landing";
+import Youtubevideo from "../components/Youtubevideo";
+import EventCard from "../components/EventCard";
+import eventCard from "../data/eventCard";
+import Opportunity from "../components/Opportunity";
+import Faq from "../components/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
