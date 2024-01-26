@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from 'react-lottie';
 import SignInAnimation from '../assets/lottie/signin.json'
 
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { useState } from "react";
 import { auth } from "../../firebase-config";
 
@@ -34,6 +34,18 @@ export default function SignIn() {
     });
   }
 
+  const forgotPassword = async (e) => {
+    e.preventDefault()
+
+    await sendPasswordResetEmail(auth, email)
+    .then(() => {
+      alert('Password reset email sent')
+    })
+    .catch((error) => {
+      alert(error.message)
+    })
+  }
+
   return (
     <section className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
       <div className="md:w-1/2 max-w-lg">
@@ -63,6 +75,13 @@ export default function SignIn() {
             onChange={(e) => setPassword(e.target.value)} 
             required 
             placeholder="Password" />
+        <div className="mt-4 flex justify-between font-semibold text-sm">
+          <button 
+            className="text-blue-600 text-lg hover:text-blue-700 hover:underline hover:underline-offset-4"
+            onClick={forgotPassword}>
+            Forgot Password?
+          </button>
+        </div>
         <div className="text-center md:text-left font-bold">
           <button 
             className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded-xl tracking-wider text-base" 
