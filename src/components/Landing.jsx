@@ -41,7 +41,7 @@ export default function Landing() {
       </div>
       {/* largest view  */}
       <div
-        className="relative hidden lg:block 2xl:col-span-2"
+        className="relative hidden lg:block 2xl:col-span-3"
       >
         <img
           className="absolute inset-0  h-full min-w-full"
