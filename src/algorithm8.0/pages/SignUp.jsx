@@ -5,7 +5,6 @@ import SignUpAnimation from '../assets/lottie/signup.json'
 import {  createUserWithEmailAndPassword  } from 'firebase/auth';
 import { useState } from "react";
 import { auth } from "../../firebase-config";
-import { useHistory } from 'react-router-dom';
 
 export default function SignUp() {
   const isMobile = window.innerWidth < 768;
@@ -23,8 +22,6 @@ export default function SignUp() {
   const [password, setPassword] = useState('');
   const [conpassword, setConPassword] = useState('');
 
-  const history = useHistory();
-
   const onSubmit = async (e) => {
     e.preventDefault()
 
@@ -35,7 +32,7 @@ export default function SignUp() {
         await createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             alert('Account created successfully')
-            history.push('/signin');
+            // navigate('/signin');
         })
         .catch((error) => {
             alert(error.message)
