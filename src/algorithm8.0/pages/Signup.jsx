@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from 'react-lottie';
 import SigninAnimation from '../assets/lottie/signin.json'
 
-export default function Signup() {
+export default function SignIn() {
   const isMobile = window.innerWidth < 768;
 
   const defaultOptions = {

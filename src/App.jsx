@@ -12,17 +12,17 @@ import EventDetails from "./pages/EventDetails";
 import Member from "./pages/Member";
 
 import AlgoHome from "./algorithm8.0/pages/AlgoHome";
-import Signup from "./algorithm8.0/pages/Signup";
+import SignIn from "./algorithm8.0/pages/Signup";
 
 import { BrowserRouter, Route, Switch, } from "react-router-dom";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div>
         <Switch>
           <Route path="/algorithm" component={AlgoHome} />
-          <Route path="/signin" component={Signup} />
+          <Route path="/algorithm/signin" component={SignIn} />
           <Route path="/" component={DefaultContainer} />
         </Switch>
       </div>
@@ -31,16 +31,16 @@ export default function App() {
 }
 
 const DefaultContainer = () => (
-  <div className="container">
+  <div className="w-[100vw]">
     <NavBar />
-    <Route exact path="/" component={Home} />
-    <Route path="/events" component={Event} />
-    <Route path="/resources" component={Resource} />
-    <Route path="/eventdetails" component={EventDetails} />
-    <Route path="/teams" component={Teams} />
-    <Route path="/member" component={Member} />
-    <Route path="/hackathon" component={Hackathon} />
-    <Route path="/algorithm" component={AlgoHome} />
+      <Route exact path="/" component={Home} />
+      <Route path="/events" component={Event} />
+      <Route path="/resources" component={Resource} />
+      <Route path="/eventdetails" component={EventDetails} />
+      <Route path="/teams" component={Teams} />
+      <Route path="/member" component={Member} />
+      <Route path="/hackathon" component={Hackathon} />
+      <Route path="/algorithm" component={AlgoHome} />
     <Foot />
   </div>
 )
