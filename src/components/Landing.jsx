@@ -13,12 +13,12 @@ export default function Landing() {
             src="/img/landing.svg"
             alt="graphics"
           />
-          <p className="text-sm font-semibold tracking-wider text-black uppercase">Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai</p>
-          <p className="text-sm font-semibold tracking-wider text-black uppercase">Department of Computer Engineering</p>
+          <p class="text-sm font-semibold tracking-wider text-black uppercase">Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai</p>
+          <p class="text-sm font-semibold tracking-wider text-black uppercase">Department of Computer Engineering</p>
           <h1
             className="font-headline  text-brand-light py-2 text-4xl font-bold tracking-tight sm:text-4xl lg:text-6xl xl:text-8xl"
           >
-            Programmer's Club
+            Programmers Club
           </h1>
           <p
             className="mt-2 text-gray-600 sm:mt-4 sm:text-xl"
@@ -34,7 +34,7 @@ export default function Landing() {
               href="/algorithm"
               target="_self"
             >
-              Algorithm 8.0
+              Algoritim 8.O
             </a>
           </div>
         </div>

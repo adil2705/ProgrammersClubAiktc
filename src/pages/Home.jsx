@@ -1,10 +1,10 @@
 import React from "react";
-import Landing from "../components/Landing";
-import Youtubevideo from "../components/Youtubevideo";
-import EventCard from "../components/EventCard";
-import eventCard from "../data/eventCard";
-import Opportunity from "../components/Opportunity";
-import Faq from "../components/Faq";
+import Landing from "./components/Landing";
+import Youtubevideo from "./components/Youtubevideo";
+import EventCard from "./components/EventCard";
+import eventCard from "./data/eventCard";
+import Opportunity from "./components/Opportunity";
+import Faq from "./components/Faq";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -59,7 +59,7 @@ export default function Home() {
                   href="/eventdetails"
                   className=" focus:outline-none mt-10 rounded-full bg-green-400 p-2 px-4  text-center font-semibold text-white shadow-lg transition-all duration-300 hover:bg-green-800 hover:shadow-none focus:ring"
                 >
-                  Completed
+                  Register Here
                 </a>
               </div>
             </div>
