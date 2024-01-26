@@ -1,14 +1,14 @@
 import React from "react";
 import Lottie from 'react-lottie';
-import SignInAnimation from '../assets/lottie/signin.json'
+import SignUpAnimation from '../assets/lottie/signup.json'
 
-export default function SignIn() {
+export default function SignUp() {
   const isMobile = window.innerWidth < 768;
 
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: SignInAnimation,
+    animationData: SignUpAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
@@ -19,24 +19,22 @@ export default function SignIn() {
       <div className="md:w-1/2 max-w-lg">
         <Lottie 
           options={defaultOptions}
-          height={isMobile ? 300 : 650}
-          width={isMobile ? 480 : 500}
+          height={isMobile ? 250 : 500}
+          width={isMobile ? 350 : 500}
         />
       </div>
       <div className="md:w-1/2 max-w-sm">
         <div className="my-4 font-semibold text-2xl text-slate-500 text-center md:text-left">
-          Sign-In to your account
+          Sign-Up for an account
         </div>
         <input className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl" type="text" placeholder="Email Address" />
         <input className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mt-4" type="password" placeholder="Password" />
-        <div className="mt-4 flex justify-between font-semibold text-sm">
-          <a className="text-blue-600 text-lg hover:text-blue-700 hover:underline hover:underline-offset-4" href="#">Forgot Password?</a>
-        </div>
+        <input className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mt-4" type="password" placeholder="Confirm Password" />
         <div className="text-center md:text-left font-bold">
-          <button className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded-xl tracking-wider text-base" type="submit">Sign-In</button>
+          <button className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded-xl tracking-wider text-base" type="submit">Sign-Up</button>
         </div>
         <div className="mt-4 font-semibold text-lg text-slate-500 text-center md:text-left">
-          Don't have an account? <a className="text-red-600 hover:underline hover:underline-offset-4 font-bold" href="/signup">Sign-Up</a>
+          Already have an account? <a className="text-red-600 hover:underline hover:underline-offset-4 font-bold" href="/signin">Sign-In</a>
         </div>
       </div>
     </section>
