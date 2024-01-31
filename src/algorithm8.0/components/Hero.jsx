@@ -1,4 +1,4 @@
-import { styles } from "../styles";
+import { styles } from "../utils/styles";
 import { astronaut } from "../assets";
 
 const Hero = () => {

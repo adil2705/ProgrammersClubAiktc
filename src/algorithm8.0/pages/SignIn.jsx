@@ -36,7 +36,7 @@ export default function SignIn() {
     try {
         await createUserWithEmailAndPassword(auth, email, password);
         setLoading(false);
-        setAlertMessage('Sign-Up successful');
+        setAlertMessage('Account Created Successfully');
         setAlertType('success');
         setShowAlert(true);
         setTimeout(() => {
@@ -49,7 +49,7 @@ export default function SignIn() {
             try {
                 await signInWithEmailAndPassword(auth, email, password);
                 setLoading(false);
-                setAlertMessage('Sign-In successful');
+                setAlertMessage('Logged-In Successfully');
                 setAlertType('success');
                 setShowAlert(true);
                 setTimeout(() => {

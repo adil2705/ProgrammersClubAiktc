@@ -16,6 +16,7 @@ export default function Home() {
     AOS.init();
     AOS.refresh();
   }, []);
+  
   return (
     <div className="space-y-5">
       <Landing />
@@ -53,7 +54,7 @@ export default function Home() {
                 Algorithm hackathon is an event where participants come together to solve real world problems, basically in a competitive environment.
                 </p>
               </div>
-              <div className="">
+              <div>
                 <a
                   href="/eventdetails"
                   className=" focus:outline-none mt-10 rounded-full bg-green-400 p-2 px-4  text-center font-semibold text-white shadow-lg transition-all duration-300 hover:bg-green-800 hover:shadow-none focus:ring"

@@ -1,5 +1,5 @@
 import { clients } from "../constants";
-import { styles } from "../styles";
+import { styles } from "../utils/styles";
 
 const Clients = () => (
     <div className={`${styles.flexCenter} my-4 sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0`}>
