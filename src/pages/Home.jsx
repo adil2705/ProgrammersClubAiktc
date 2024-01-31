@@ -17,7 +17,7 @@ export default function Home() {
     AOS.refresh();
   }, []);
   return (
-    <div className="space-y-5 overflow-x-hidden">
+    <div className="space-y-5">
       <Landing />
       <Youtubevideo />
       {/* Event Cards */}
