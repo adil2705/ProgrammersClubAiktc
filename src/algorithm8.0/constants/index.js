@@ -19,8 +19,12 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "registration",
+      title: "Register",
+    },
+    {
+      id: "login",
+      title: "Login",
     },
     {
       id: "contact",
