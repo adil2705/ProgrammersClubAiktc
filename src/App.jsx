@@ -17,7 +17,6 @@ import SignIn from "./algorithm8.0/pages/SignIn";
 import { BrowserRouter, Route, Switch, } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
-import SignUp from "./algorithm8.0/pages/SignUp";
 import Register from "./algorithm8.0/pages/Registration";
 
 export default function App() {
@@ -28,7 +27,6 @@ export default function App() {
         <Switch>
           <Route path="/algorithm" component={AlgoHome} />
           <Route path="/signin" component={SignIn} />
-          <Route path="/signup" component={SignUp} />
           <Route path="/register" component={Register} />
           <Route path="/" component={DefaultContainer} />
         </Switch>
@@ -47,7 +45,6 @@ const DefaultContainer = () => (
       <Route path="/teams" component={Teams} />
       <Route path="/member" component={Member} />
       <Route path="/hackathon" component={Hackathon} />
-      <Route path="/algorithm" component={AlgoHome} />
     <Foot />
   </div>
 )

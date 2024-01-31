@@ -26,7 +26,7 @@ export default function Alert({ message, type }) {
             <div role="alert" className="border-s-4 border-green-500 bg-green-50 p-4">
                 <div className="flex items-center gap-2 text-green-800">
                     <svg 
-                        class="h-5 w-5 fill-[#166534]" 
+                        className="h-5 w-5 fill-[#166534]" 
                         viewBox="0 0 512 512" 
                         xmlns="http://www.w3.org/2000/svg">
                         <path 
