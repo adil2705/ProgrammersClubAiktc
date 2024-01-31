@@ -18,17 +18,17 @@ const Register = () => {
     const [linkedinLead, setLinkedinLead] = useState('');
     const [collegeLead, setCollegeLead] = useState('');
 
-    const [nameMember1, setNameMember1] = useState('');
-    const [emailMember1, setEmailMember1] = useState('');
-    const [githubMember1, setGithubMember1] = useState('');
-    const [linkedinMember1, setLinkedinMember1] = useState('');
-    const [collegeMember1, setCollegeMember1] = useState('');
-
     const [nameMember2, setNameMember2] = useState('');
     const [emailMember2, setEmailMember2] = useState('');
     const [githubMember2, setGithubMember2] = useState('');
     const [linkedinMember2, setLinkedinMember2] = useState('');
     const [collegeMember2, setCollegeMember2] = useState('');
+
+    const [nameMember3, setNameMember3] = useState('');
+    const [emailMember3, setEmailMember3] = useState('');
+    const [githubMember3, setGithubMember3] = useState('');
+    const [linkedinMember3, setLinkedinMember3] = useState('');
+    const [collegeMember3, setCollegeMember3] = useState('');
 
     const [loading, setLoading] = useState(false);
 
@@ -42,7 +42,9 @@ const Register = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
 
-        if (!nameLead || !emailLead || !contactLead || !githubLead || !linkedinLead || !collegeLead || !nameMember1 || !emailMember1 || !githubMember1 || !linkedinMember1 || !collegeMember1 || !nameMember2 || !emailMember2 || !githubMember2 || !linkedinMember2 || !collegeMember2) {
+        if (!nameLead || !emailLead || !contactLead || !githubLead || !linkedinLead || !collegeLead || 
+            !nameMember2 || !emailMember2 || !githubMember2 || !linkedinMember2 || !collegeMember2 || 
+            !nameMember3 || !emailMember3 || !githubMember3 || !linkedinMember3 || !collegeMember3) {
             setAlertMessage('Please fill all the fields');
             setAlertType('error');
             setShowAlert(true);
@@ -107,7 +109,7 @@ const Register = () => {
             return;
         }
 
-        if (!nameRegex.test(nameMember1)) {
+        if (!nameRegex.test(nameMember2)) {
             setAlertMessage('Please enter a valid Name (Member 2)');
             setAlertType('error');
             setShowAlert(true);
@@ -116,7 +118,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!emailRegex.test(emailMember1)) {
+        if (!emailRegex.test(emailMember2)) {
             setAlertMessage('Please enter a valid Email Address (Member 2)');
             setAlertType('error');
             setShowAlert(true);
@@ -125,7 +127,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!githubLinkedinRegex.test(githubMember1)) {
+        if (!githubLinkedinRegex.test(githubMember2)) {
             setAlertMessage('Please enter a valid GitHub Profile Link (Member 2)');
             setAlertType('error');
             setShowAlert(true);
@@ -134,7 +136,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!linkedinRegex.test(linkedinMember1)) {
+        if (!linkedinRegex.test(linkedinMember2)) {
             setAlertMessage('Please enter a valid LinkedIn Profile Link (Member 2)');
             setAlertType('error');
             setShowAlert(true);
@@ -143,7 +145,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!collegeRegex.test(collegeMember1)) {
+        if (!collegeRegex.test(collegeMember2)) {
             setAlertMessage('Please enter a valid College Name (Member 2)');
             setAlertType('error');
             setShowAlert(true);
@@ -153,7 +155,7 @@ const Register = () => {
             return;
         }
 
-        if (!nameRegex.test(nameMember2)) {
+        if (!nameRegex.test(nameMember3)) {
             setAlertMessage('Please enter a valid Name (Member 3)');
             setAlertType('error');
             setShowAlert(true);
@@ -162,7 +164,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!emailRegex.test(emailMember2)) {
+        if (!emailRegex.test(emailMember3)) {
             setAlertMessage('Please enter a valid Email Address (Member 3)');
             setAlertType('error');
             setShowAlert(true);
@@ -171,7 +173,7 @@ const Register = () => {
             }, 2000);
             return;
         }
-        if (!githubLinkedinRegex.test(githubMember2)) {
+        if (!githubLinkedinRegex.test(githubMember3)) {
             setAlertMessage('Please enter a valid GitHub Profile Link (Member 3)');
             setAlertType('error');
             setShowAlert(true);
@@ -180,7 +182,7 @@ const Register = () => {
             }, 2000);
             return; 
         }
-        if (!linkedinRegex.test(linkedinMember2)) {
+        if (!linkedinRegex.test(linkedinMember3)) {
             setAlertMessage('Please enter a valid LinkedIn Profile Link (Member 3)');
             setAlertType('error');
             setShowAlert(true);
@@ -208,16 +210,16 @@ const Register = () => {
                 githubLead: githubLead,
                 linkedinLead: linkedinLead,
                 collegeLead: collegeLead,
-                nameMember1: nameMember1,
-                emailMember1: emailMember1,
-                githubMember1: githubMember1,
-                linkedinMember1: linkedinMember1,
-                collegeMember1: collegeMember1,
                 nameMember2: nameMember2,
                 emailMember2: emailMember2,
                 githubMember2: githubMember2,
                 linkedinMember2: linkedinMember2,
-                collegeMember2: collegeMember2
+                collegeMember2: collegeMember2,
+                nameMember3: nameMember3,
+                emailMember3: emailMember3,
+                githubMember3: githubMember3,
+                linkedinMember3: linkedinMember3,
+                collegeMember3: collegeMember3
             });
             setLoading(false);
             setAlertMessage('Registered Successfully');
@@ -297,46 +299,46 @@ const Register = () => {
                                 required 
                                 placeholder="College Name" />
                         </fieldset>
-
+                        2
                         <fieldset className='border border-slate-500 p-10 rounded-2xl m-3 flex-1'>
                             <legend className='text-2xl font-bold px-2'>Member 2</legend>
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text" 
-                                value={nameMember1}
-                                onChange={(e) => setNameMember1(e.target.value)} 
+                                value={nameMember2}
+                                onChange={(e) => setNameMember2(e.target.value)} 
                                 required 
                                 placeholder="Full Name" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text" 
-                                value={emailMember1}
-                                onChange={(e) => setEmailMember1(e.target.value)}  
+                                value={emailMember2}
+                                onChange={(e) => setEmailMember2(e.target.value)}  
                                 required 
                                 placeholder="Email Address" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text" 
-                                value={githubMember1}
-                                onChange={(e) => setGithubMember1(e.target.value)}
+                                value={githubMember2}
+                                onChange={(e) => setGithubMember2(e.target.value)}
                                 required 
                                 placeholder="GitHub Profile" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text" 
-                                value={linkedinMember1}
-                                onChange={(e) => setLinkedinMember1(e.target.value)} 
+                                value={linkedinMember2}
+                                onChange={(e) => setLinkedinMember2(e.target.value)} 
                                 required 
                                 placeholder="LinkedIn Address" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={collegeMember1}
-                                onChange={(e) => setCollegeMember1(e.target.value)}  
+                                value={collegeMember2}
+                                onChange={(e) => setCollegeMember2(e.target.value)}  
                                 required 
                                 placeholder="College Name" />
                         </fieldset>
@@ -346,40 +348,40 @@ const Register = () => {
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={nameMember2}
-                                onChange={(e) => setNameMember2(e.target.value)} 
+                                value={nameMember3}
+                                onChange={(e) => setNameMember3(e.target.value)} 
                                 required
                                 placeholder="Full Name" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={emailMember2}
-                                onChange={(e) => setEmailMember2(e.target.value)}  
+                                value={emailMember3}
+                                onChange={(e) => setEmailMember3(e.target.value)}  
                                 required 
                                 placeholder="Email Address" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={githubMember2}
-                                onChange={(e) => setGithubMember2(e.target.value)}
+                                value={githubMember3}
+                                onChange={(e) => setGithubMember3(e.target.value)}
                                 required 
                                 placeholder="GitHub Profile" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={linkedinMember2}
-                                onChange={(e) => setLinkedinMember2(e.target.value)}
+                                value={linkedinMember3}
+                                onChange={(e) => setLinkedinMember3(e.target.value)}
                                 required 
                                 placeholder="LinkedIn Address" />
 
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
                                 type="text"
-                                value={collegeMember2}
-                                onChange={(e) => setCollegeMember2(e.target.value)}  
+                                value={collegeMember3}
+                                onChange={(e) => setCollegeMember3(e.target.value)}  
                                 required 
                                 placeholder="College Name" />
                         </fieldset>
