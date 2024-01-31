@@ -14,7 +14,7 @@ import Member from "./pages/Member";
 import AlgoHome from "./algorithm8.0/pages/AlgoHome";
 import SignIn from "./algorithm8.0/pages/SignIn";
 
-import { BrowserRouter, Route, Switch, } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
 import Register from "./algorithm8.0/pages/Registration";
@@ -24,12 +24,12 @@ export default function App() {
     <BrowserRouter>
       <div>
         <Analytics />
-        <Switch>
-          <Route path="/algorithm" component={AlgoHome} />
-          <Route path="/signin" component={SignIn} />
-          <Route path="/register" component={Register} />
-          <Route path="/" component={DefaultContainer} />
-        </Switch>
+        <Routes>
+          <Route path="/algorithm" element={<AlgoHome />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/*" element={<DefaultContainer />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
@@ -38,13 +38,15 @@ export default function App() {
 const DefaultContainer = () => (
   <div className="w-[100vw]">
     <NavBar />
-      <Route exact path="/" component={Home} />
-      <Route path="/events" component={Event} />
-      <Route path="/resources" component={Resource} />
-      <Route path="/eventdetails" component={EventDetails} />
-      <Route path="/teams" component={Teams} />
-      <Route path="/member" component={Member} />
-      <Route path="/hackathon" component={Hackathon} />
+    <Routes>
+      <Route path="/*" element={<Home />} />
+      <Route path="/events" element={<Event />} />
+      <Route path="/resources" element={<Resource />} />
+      <Route path="/eventdetails" element={<EventDetails />} />
+      <Route path="/teams" element={<Teams />} />
+      <Route path="/member" element={<Member />} />
+      <Route path="/hackathon" element={<Hackathon />} />
+    </Routes>
     <Foot />
   </div>
 )
