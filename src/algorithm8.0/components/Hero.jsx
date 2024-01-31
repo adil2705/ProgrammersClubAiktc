@@ -1,3 +1,5 @@
+import React from "react";
+
 import { styles } from "../utils/styles";
 import { astronaut } from "../assets";
 
