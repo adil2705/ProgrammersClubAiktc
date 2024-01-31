@@ -299,7 +299,7 @@ const Register = () => {
                                 required 
                                 placeholder="College Name" />
                         </fieldset>
-                        2
+                        
                         <fieldset className='border border-slate-500 p-10 rounded-2xl m-3 flex-1'>
                             <legend className='text-2xl font-bold px-2'>Member 2</legend>
                             <input 
