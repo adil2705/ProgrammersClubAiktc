@@ -14,7 +14,7 @@ import Member from "./pages/Member";
 import AlgoHome from "./algorithm8.0/pages/AlgoHome";
 import SignIn from "./algorithm8.0/pages/SignIn";
 
-import { BrowserRouter, Route, Switch, } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
 import Register from "./algorithm8.0/pages/Registration";
