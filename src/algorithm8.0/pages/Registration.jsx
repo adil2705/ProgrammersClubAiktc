@@ -34,13 +34,15 @@ const Register = () => {
         });
     }
 
+    let form_style_modular_tailwind = "flex flex-col"
+
     return (
         <section>
             <div className="p-10">
                 <h1 className="mb-8 font-extrabold text-4xl">Registration Form</h1>
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-2 gap-8 ">
 
-                    <form>
+                    <form className={`grid grid-cols-2 w-[94vw] gap-x-[2vw] gap-y-[4vw] sm:${form_style_modular_tailwind} md:${form_style_modular_tailwind}`}>
                         <fieldset className='border border-red-500 p-10 rounded-2xl'>
                             <legend className='text-2xl font-bold px-2'>Member 1 (Lead)</legend>
                             <input 
@@ -194,8 +196,8 @@ const Register = () => {
                                 placeholder="College Name" />
                         </fieldset>
 
-                        <aside className="my-5">
-                            <div className="bg-gray-100 p-8 rounded">
+                        <aside className="mt-4">
+                            <div className="bg-gray-100 p-8 rounded h-full">
                                 <h2 className="font-bold text-2xl">Instructions</h2>
                                 <ul className="list-disc mt-4 list-inside">
                                     <li>All users must provide a valid email address and password to create an account.</li>
