@@ -7,6 +7,8 @@ import { collection, addDoc } from "firebase/firestore";
 import Alert from "../components/Alert";
 
 const Register = () => {
+    const isMobile = window.innerWidth < 768;
+
     const [showAlert, setShowAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
     const [alertType, setAlertType] = useState('');
@@ -245,11 +247,11 @@ const Register = () => {
             <div className="fixed w-full top-0 z-10">
                 {showAlert && <Alert message={alertMessage} type={alertType} />}
             </div>
-            <div className="p-10">
-                <h1 className="mb-8 font-extrabold text-4xl">Registration Form</h1>
+            <div className={`${isMobile ? 'p-5' : 'p-10'}`}>
+                <h1 className="mb-8 ml-2 font-extrabold text-4xl">Registration Form</h1>
                 <div>
                     <form className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-                        <fieldset className='border border-red-500 p-10 rounded-2xl m-3'>
+                        <fieldset className='border border-red-500 p-6 rounded-2xl m-3'>
                             <legend className='text-2xl font-bold px-2'>Member 1</legend>
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
@@ -300,7 +302,7 @@ const Register = () => {
                                 placeholder="College Name" />
                         </fieldset>
                         
-                        <fieldset className='border border-slate-500 p-10 rounded-2xl m-3 flex-1'>
+                        <fieldset className='border border-slate-500 p-6 rounded-2xl m-3 flex-1'>
                             <legend className='text-2xl font-bold px-2'>Member 2</legend>
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
@@ -343,7 +345,7 @@ const Register = () => {
                                 placeholder="College Name" />
                         </fieldset>
 
-                        <fieldset className='border border-slate-500 p-10 rounded-2xl m-3 flex-1'>
+                        <fieldset className='border border-slate-500 p-6 rounded-2xl m-3 flex-1'>
                             <legend className='text-2xl font-bold px-2'>Member 3</legend>
                             <input 
                                 className="text-xl w-full px-4 py-2 border border-solid border-gray-300 rounded-xl mb-3" 
@@ -387,7 +389,7 @@ const Register = () => {
                         </fieldset>
 
                         {/* Add instructions */}
-                        <aside className='border border-slate-500 rounded-2xl mt-[26px] mx-3 mb-3 flex-1'>
+                        <aside className='border border-slate-500 rounded-2xl mt-[26px] mx-2 mb-3 flex-1'>
                             <div className="bg-gray-100 rounded-2xl h-full p-4">
                                 <h2 className="font-bold text-3xl">Instructions</h2>
                                 <ul className="list-disc mt-4 list-inside text-lg">
@@ -400,7 +402,7 @@ const Register = () => {
 
                         <div className="flex justify-center text-center md:text-left font-bold">
                             <button 
-                                className="mt-3 mx-3 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded-xl tracking-wider text-base" 
+                                className={`mt-3 ${isMobile ? 'mx-2' : 'mx-3'} bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded-xl tracking-wider text-base`} 
                                 type="submit"
                                 style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
                                 onClick={onSubmit}>

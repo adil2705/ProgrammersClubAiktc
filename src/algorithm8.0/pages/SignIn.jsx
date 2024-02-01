@@ -114,10 +114,10 @@ export default function SignIn() {
             <Lottie 
               options={defaultOptions}
               height={400}
-              width={isMobile ? 300 : 400}
+              width={isMobile ? 300 : 420}
             />
           </div>
-          <div className={`md:w-1/2 max-w-sm ${isMobile ? 'px-6 py-6' : 'p-10'}`}>
+          <div className={`md:w-1/2 max-w-sm ${isMobile ? 'px-5 py-6' : 'px-8 py-5'}`}>
             <div className="mb-4 font-semibold text-2xl text-slate-500 text-center md:text-left">
               Login or Create Account
             </div>
