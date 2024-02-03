@@ -1,4 +1,7 @@
 import React from 'react';
+import { 
+  StarsCanvas 
+} from "../components";
 import { useState } from 'react';
 
 import { db } from "../../firebase-config";
@@ -423,6 +426,7 @@ const Register = () => {
 
                 </div>
             </div>
+            <StarsCanvas />
         </section>
     );
 };
