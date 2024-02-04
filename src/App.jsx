@@ -21,13 +21,13 @@ export default function App() {
         <Analytics />
         <NavBar />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/events" component={Event} />
-          <Route path="/resources" component={Resource} />
-          <Route path="/eventdetails" component={EventDetails} />
-          <Route path="/teams" component={Teams} />
-          <Route path="/hackathon" component={Hackathon} />
-          <Route path="/member" component={Member} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/events" element={<Event />} />
+          <Route path="/resources" element={<Resource />} />
+          <Route path="/eventdetails" element={<EventDetails />} />
+          <Route path="/teams" element={<Teams />} />
+          <Route path="/hackathon" element={<Hackathon />} />
+          <Route path="/member" element={<Member />} />
         </Routes>
         <Foot />
       </div>
