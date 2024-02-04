@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 
 import { styles } from "../utils/styles";
@@ -29,8 +30,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX
         } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
-        }`}
-    >
+        }`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -38,8 +38,7 @@ const Navbar = () => {
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
-          }}
-        >
+          }}>
           <img src={astronaut} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Algorithm 8.0
@@ -52,8 +51,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
+              onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
@@ -64,13 +62,11 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
+            onClick={() => setToggle(!toggle)} />
 
           <div
             className={`${!toggle ? "hidden" : "flex"
-              } p-6 bg-tertiary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
+              } p-6 bg-tertiary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
@@ -80,8 +76,7 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
-                  }}
-                >
+                  }}>
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}

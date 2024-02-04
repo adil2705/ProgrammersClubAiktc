@@ -15,7 +15,6 @@ export default function Alert({ message, type }) {
 
                     <strong className="block font-bold text-xl"> Failure </strong>
                 </div>
-
                 <p className="mt-2 text-base text-red-700">
                     {message}
                 </p>
@@ -35,7 +34,6 @@ export default function Alert({ message, type }) {
 
                     <strong className="block font-bold text-xl"> Success </strong>
                 </div>
-
                 <p className="mt-2 text-base text-green-700">
                     {message}
                 </p>

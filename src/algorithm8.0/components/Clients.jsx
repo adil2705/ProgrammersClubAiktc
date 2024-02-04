@@ -3,7 +3,7 @@ import React from "react";
 import { clients } from "../constants";
 import { styles } from "../utils/styles";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
 const Clients = () => (

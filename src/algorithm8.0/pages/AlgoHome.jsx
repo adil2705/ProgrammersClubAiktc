@@ -10,7 +10,6 @@ import {
   Foot,
   Clients,
   StarsCanvas, 
-  
 } from "../components";
 
 const AlgoHome = () => {
