@@ -51,7 +51,7 @@ import {
     },
   ];
   
-  const timeline = [
+  const experiences = [
     {
       title: "Event Registration",
       company_name: "Starbucks",
@@ -94,7 +94,7 @@ import {
     },
   ];
   
- const sponsers = [
+ const clients = [
     {
       id: "client-1",
       logo: airbnb,
@@ -113,5 +113,5 @@ import {
     },
   ];
   
-  export { services, timeline, sponsers };
+  export { services, experiences, clients };
   

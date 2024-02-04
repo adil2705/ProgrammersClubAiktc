@@ -3,11 +3,14 @@ import React from "react";
 import { 
   About, 
   Contact, 
-  Timeline, 
+  Experience,
   Hero, 
   Navbar, 
-  Sponsers,
-  StarsCanvas 
+  Faq,
+  Foot,
+  Clients,
+  StarsCanvas, 
+  
 } from "../components";
 
 const AlgoHome = () => {
@@ -25,15 +28,23 @@ const AlgoHome = () => {
         <StarsCanvas />
       </div>
       <div className='relative z-0'>
-        <Timeline />
+        <Experience   />
         <StarsCanvas />
       </div>
       <div className='relative z-0'>
-        <Sponsers />
+        <Clients />
+        <StarsCanvas />
+      </div>
+      <div className='relative z-0'>
+        <Faq />
         <StarsCanvas />
       </div>
       <div className='relative z-0'>
         <Contact />
+        <StarsCanvas />
+      </div>
+      <div className='relative z-0'>
+        <Foot />
         <StarsCanvas />
       </div>
     </div>
