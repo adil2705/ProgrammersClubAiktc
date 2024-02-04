@@ -14,4 +14,23 @@ import Member from "./pages/Member";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/events" component={Event} />
+          <Route path="/resources" component={Resource} />
+          <Route path="/eventdetails" component={EventDetails} />
+          <Route path="/teams" component={Teams} />
+          <Route path="/team-tshirt" component={TeamTshirt} />
+        </Switch>
+        <Foot />
+      </div>
+    </BrowserRouter>
+  );
+}
+
 
