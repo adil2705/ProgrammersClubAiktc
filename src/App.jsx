@@ -15,22 +15,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <div>
-        <Analytics />
-        <Routes>
-          <Route path="/algorithm" element={<AlgoHome />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/*" element={<DefaultContainer />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
-}
-
 const DefaultContainer = () => (
   <div className="w-[100vw]">
     <NavBar />
