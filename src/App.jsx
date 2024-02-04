@@ -11,8 +11,6 @@ import Hackathon from "./pages/Hackathon";
 import EventDetails from "./pages/EventDetails";
 import Member from "./pages/Member";
 
-import TeamTshirt from "./components/TeamTshirt";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
@@ -28,7 +26,8 @@ export default function App() {
           <Route path="/resources" component={Resource} />
           <Route path="/eventdetails" component={EventDetails} />
           <Route path="/teams" component={Teams} />
-          <Route path="/team-tshirt" component={TeamTshirt} />
+          <Route path="/hackathon" component={Hackathon} />
+          <Route path="/member" component={Member} />
         </Routes>
         <Foot />
       </div>
