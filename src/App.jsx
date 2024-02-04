@@ -11,7 +11,7 @@ import Hackathon from "./pages/Hackathon";
 import EventDetails from "./pages/EventDetails";
 import Member from "./pages/Member";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
