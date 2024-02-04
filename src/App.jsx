@@ -11,6 +11,8 @@ import Hackathon from "./pages/Hackathon";
 import EventDetails from "./pages/EventDetails";
 import Member from "./pages/Member";
 
+import TeamTshirt from "./components/TeamTshirt";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
@@ -18,6 +20,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Analytics />
         <NavBar />
         <Routes>
           <Route exact path="/" component={Home} />
