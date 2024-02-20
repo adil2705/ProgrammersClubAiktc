@@ -32,13 +32,14 @@ export default function Hackathon() {
               <p className="text-sm md:text-base text-black mb-4">
               Algorithm hackathon is an event where participants come together to solve real world problems, basically in a competitive environment.
               </p>
-              <a
-                className="ml-2 bg-transparent mr-auto hover:bg-green-500 text-black rounded shadow hover:shadow-lg py-2 px-4 border border-teal-500 hover:border-transparent"
-                href="https://algorithm.aiktc.ac.in/"
-                target="_blank"
-              >
-                Explore Now Algorithm 7.0
-              </a>
+              <a href="https://algorithm8.aiktc.ac.in/" class="relative inline-block my-2 text-lg group">
+<span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-orange-600  rounded-lg group-hover:text-white">
+<span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-orange-50"></span>
+<span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-600 group-hover:-rotate-180 ease"></span>
+<span class="relative">Explore Now Algorithm 8.O</span>
+</span>
+<span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-orange-600 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+</a>
             </div>
             <div className=" ml-2 text-sm font-semibold  md:ml-12 lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
