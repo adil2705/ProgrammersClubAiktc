@@ -21,7 +21,7 @@ export default function Home() {
     <div className="space-y-5">
       <Landing />
       <Youtubevideo />
-      {/* 
+      
       <section className="mx-auto mt-6 mb-12 max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-4">
         <article className="col-auto mb-10">
           <div
@@ -63,7 +63,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div> */}
+          </div> 
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
