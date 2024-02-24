@@ -14,15 +14,12 @@ export default function Youtubevideo() {
       className="w-8/10 mx-4  max-w-7xl flex-1 rounded-lg bg-green-600 p-2 shadow-xl sm:p-3 md:mx-auto md:mt-24 md:w-3/5"
     >
       <div className="aspect-w-16 aspect-h-9 ">
-        <iframe
-          className="rounded "
-          width="560"
-          height="300"
-          src="https://youtu.be/3V1PciBdUJM?feature=shared" 
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+       <iframe width="560" height="315" 
+         src="https://www.youtube.com/embed/3V1PciBdUJM?si=T6RBEFZ5d2fqiHpZ" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen></iframe>
       </div>
     </div>
   );
