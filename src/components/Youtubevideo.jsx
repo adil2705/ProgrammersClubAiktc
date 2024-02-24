@@ -18,7 +18,7 @@ export default function Youtubevideo() {
           className="rounded "
           width="560"
           height="300"
-          src="https://www.youtube.com/embed/nqxk5yLZH3w?si=PnSiO_7SW2YRZtZZ" 
+          src="https://youtu.be/3V1PciBdUJM?feature=shared" 
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
