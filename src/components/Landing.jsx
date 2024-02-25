@@ -10,7 +10,7 @@ export default function Landing() {
           {/* <img className="h-10" src="/img/ccbcet-logo.svg" alt="Workcation" /> */}
           <img
             className="mt-2 rounded-lg object-center sm:mt-6 sm:h-80 sm:w-auto sm:object-cover  lg:hidden"
-            src="/img/landing.svg"
+            src="/img/algo_logo.png"
             alt="graphics"
           />
           <p className="text-sm font-semibold tracking-wider text-black uppercase">Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai</p>
