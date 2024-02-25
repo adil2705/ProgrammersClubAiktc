@@ -22,7 +22,7 @@ export default function Event() {
             <div className="flex flex-col rounded-lg bg-gray-100 xl:flex-row shadow-xl">
               <img
                 className=" roun w-auto rounded-t-lg xl:h-96 xl:rounded-l-lg xl:rounded-t-none"
-                src="/img/algo.jpg"
+                src="/img/WhatsApp Image 2024-02-25 at 5.03.02 PM.jpeg"
                 alt="banner"
               />
               <div className="p-10 xl:p-16">
