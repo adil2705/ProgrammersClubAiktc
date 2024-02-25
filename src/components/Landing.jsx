@@ -42,7 +42,7 @@ export default function Landing() {
       >
         <img
           className="absolute inset-0  h-full min-w-full"
-          src="/img/landing.svg"
+          src="/img/algo_logo.png"
           alt="Woman workcationing on the beach"
         />
       </div>
