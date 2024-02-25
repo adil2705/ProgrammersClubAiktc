@@ -23,7 +23,7 @@ export default function Landing() {
           <p
             className="mt-2 text-gray-600 sm:mt-4 sm:text-xl"
           >
-            The Programmers Club is a student-led initiative established in 2015 with the motto "For the students, By the students." Since our inception, we've been fostering a dynamic community where students passionate about programming unite to share knowledge and enthusiasm for all things tech.
+            The Programmers Club is a student-led initiative established in 2014 with the motto "For the students, By the students." Since our inception, we've been fostering a dynamic community where students passionate about programming unite to share knowledge and enthusiasm for all things tech.
           </p>
           {/* button  */}
         <a href="https://algorithm8.aiktc.ac.in/" class="relative inline-block my-2 text-lg group">
