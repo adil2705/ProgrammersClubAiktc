@@ -10,7 +10,7 @@ export default [
       github: "https://github.com/adil2705"
     },
     {
-      imageUrl: "./TeamPic/Shadulla.png",
+      imageUrl: "./TeamPic/IMG-20240225-WA0051.jpg",
       name: "Shadullah Shaikh",
       designation: "Technical & Event Lead",
       class:"TE-CO",
