@@ -11,7 +11,7 @@ export default [
     },
     {
       imageUrl: "./TeamPic/IMG-20240225-WA0051.jpg",
-      name: "Shadullah Shaikh",
+      name: "Shadulla Shaikh",
       designation: "Technical & Event Lead",
       class:"TE-CO",
       instagram: "https://www.instagram.com/sshadulla22_?igshid=OGQ5ZDc2ODk2ZA==",
