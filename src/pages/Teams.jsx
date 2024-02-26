@@ -36,7 +36,7 @@ export default function Teams() {
         <span className="">Meet The Team</span>
       </p>
 
-      <div className=" flex w-96 flex-col mx-auto rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="my-5 flex w-96 flex-col mx-auto rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
           <img src="./TeamPic/IMG-20240225-WA0047.jpg" alt="profile-picture" />
         </div>
