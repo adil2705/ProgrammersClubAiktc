@@ -65,19 +65,6 @@ export default function Teams() {
 </div>
 </div>
 
-<!-- stylesheet -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
-/>
-
- <!-- Font Awesome Link -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-  crossorigin="anonymous"
-/>
       <section className="  mx-auto   max-w-7xl overflow-hidden px-4 sm:px-6 ">
         <article className="col-auto mb-10 mt-10">
           <div
