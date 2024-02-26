@@ -23,7 +23,16 @@ export default function Teams() {
 
   return (
     <div className="bg-gray-100">
-      <p className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl">
+      
+
+      <section className="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6 ">
+        <article className="col-auto mb-10 mt-10">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl"
+          >
+            <p className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl">
         <span className="">Meet The Team</span>
       </p>
 
@@ -60,14 +69,6 @@ export default function Teams() {
           </a>
         </div>
       </div>
-
-      <section className="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6 ">
-        <article className="col-auto mb-10 mt-10">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl"
-          >
             <p className="">
               Passionate students driving the success of the Chapter
             </p>
