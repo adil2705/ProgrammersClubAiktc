@@ -24,12 +24,11 @@ export default function Teams() {
     AOS.refresh();
   }, []);
   return (
-    <p className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl"
-          >
+    <p className="title-font mb-20 uppercase font-bold text-center text-2xl font-medium text-gray-700 sm:text-3xl" >
               <span className="">Meet The Team</span>
               
             </p>
-    <!-- component -->
+    
 <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div class="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
     <img src="./TeamPic/IMG-20240225-WA0047.jpg" alt="profile-picture" />
@@ -63,10 +62,6 @@ export default function Teams() {
     </a>
   </div>
 </div>
-<div class="w-full pt-5 px-4 mb-8 mx-auto ">
-    <div class="text-sm text-gray-700 py-1">
-        Made with <a class="text-gray-700 font-semibold" href="https://www.material-tailwind.com/docs/html/card?ref=tailwindcomponents" target="_blank">Material Tailwind</a> by <a href="https://www.creative-tim.com?ref=tailwindcomponents" class="text-gray-700 font-semibold" target="_blank"> Creative Tim</a>.
-    </div>
 </div>
 
 <!-- stylesheet -->
